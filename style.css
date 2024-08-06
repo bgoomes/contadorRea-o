@@ -82,6 +82,7 @@
   
   button {
     height: 3.25rem;
+    width: 170px;
   
     background-color: #f37a1f;
   
@@ -98,6 +99,15 @@
   
     margin-top: 3rem;
     outline: 0;
+  }
+
+  .reset{
+    background-color: #f1f2f6;
+    color: #f37a1f;
+  }
+
+  .reset:hover{
+    background-color: aliceblue;
   }
   
   button:hover {
@@ -134,5 +144,12 @@
     font-size: 2rem;
     line-height: 3rem;
     word-break: break-all;
+  }
+
+  .box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
   }
   

@@ -1,5 +1,6 @@
 const total = document.getElementById("total")
 const form = document.querySelector("form")
+const limpa = document.getElementById("limpa")
 
 const footer = document.querySelector("main footer")
 
@@ -7,6 +8,12 @@ total.addEventListener("input" , () => {
     const hasCharactersRegex = /\D+/g
     total.value = total.value.replace(hasCharactersRegex, "")
 })
+
+limpa.onclick = (event) => {
+    event.preventDefault()
+    total.value = ""
+    footer.classList.remove("show-result")
+}
 
 form.onsubmit = (event) =>{
     event.preventDefault()
